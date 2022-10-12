@@ -1,0 +1,28 @@
+/*
+    Références: https://davidwalsh.name/css-flip
+*/
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#imageContainer img {
+    width: 300px;
+    height: 222px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: .8s all;
+}
+
+.box{
+    border:2px solid black;
+    margin: 10px 0;
+    cursor: pointer;
+}
